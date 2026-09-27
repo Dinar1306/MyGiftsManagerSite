@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="My Gifts is an offline app for keeping every gift and the moment around it.">
+  <title>My Gifts — every gift, remembered</title>
+  <link rel="icon" href="static/MyGifts.ico" sizes="any">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="My Gifts home"><img class="brand-mark" src="static/MyGifts.png" alt=""><span>My Gifts</span></a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#features" data-i18n="navFeatures">Features</a>
+      <a href="#how-it-works" data-i18n="navHow">How it works</a>
+      <a href="blog.html" data-i18n="navBlog">Blog</a>
+      <a href="#contact" data-i18n="navContact">Contact</a>
+    </nav>
+    <div class="header-tools">
+      <div class="language-picker" aria-label="Language selector">
+        <button class="language-trigger" type="button" aria-expanded="false" aria-haspopup="true"><span class="flag flag-us" aria-hidden="true"></span><span class="language-code">EN</span><span class="chevron">⌄</span></button>
+        <div class="language-menu" role="menu">
+          <button type="button" data-lang="en" role="menuitem"><span class="flag flag-us" aria-hidden="true"></span>English</button>
+          <button type="button" data-lang="ru" role="menuitem"><span class="flag flag-ru" aria-hidden="true"></span>Русский</button>
+          <button type="button" data-lang="zh" role="menuitem"><span class="flag flag-cn" aria-hidden="true"></span>中文</button>
+        </div>
+      </div>
+      <a class="header-cta" href="#download" data-i18n="headerCta">Get the app</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="kicker"><span class="kicker-star">✦</span><span data-i18n="heroKicker">A private place for thoughtful giving</span></p>
+        <h1 id="hero-title" data-i18n="heroTitle">The gifts fade.<br>The feeling doesn’t.</h1>
+        <p class="hero-lede" data-i18n="heroLead">My Gifts keeps every present, person, occasion and tiny detail together — quietly, offline, and always close.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#download"><span data-i18n="heroCta">Discover My Gifts</span><span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="#features" data-i18n="heroLink">See what it remembers</a>
+        </div>
+        <p class="offline-note"><span class="lock">⌁</span><span data-i18n="offlineNote">Your memories stay on your device</span></p>
+      </div>
+      <div class="hero-visual" aria-label="My Gifts app preview">
+        <div class="sun-disc"></div>
+        <div class="memory-tag tag-one"><span>✦</span><span data-i18n="tagOne">Little things<br>matter</span></div>
+        <div class="memory-tag tag-two"><span>♡</span><span data-i18n="tagTwo">remember<br>the why</span></div>
+        <div class="phone-shell">
+          <div class="phone-speaker"></div>
+          <div class="phone-screen">
+            <div class="app-top"><span class="app-greeting" data-i18n="appGreeting">Good morning, Anna</span><span class="app-avatar">A</span></div>
+            <div class="app-title" data-i18n="appTitle">Your gifts</div>
+            <div class="app-tabs"><span class="active" data-i18n="appTabAll">All</span><span data-i18n="appTabGiven">Given</span><span data-i18n="appTabReceived">Received</span></div>
+            <div class="gift-card gift-card-coral"><div class="gift-icon">✦</div><div><b data-i18n="giftOne">Silk scarf</b><small data-i18n="giftOneMeta">For Mom · Birthday</small></div><span class="gift-date" data-i18n="giftDate">May 12</span></div>
+            <div class="gift-card gift-card-yellow"><div class="gift-icon">☼</div><div><b data-i18n="giftTwo">Ceramic cup</b><small data-i18n="giftTwoMeta">From Dima · Just because</small></div><span class="gift-date" data-i18n="giftDateTwo">Apr 28</span></div>
+            <div class="app-stats"><div><strong>24</strong><span data-i18n="appStatOne">gifts saved</span></div><div><strong>8</strong><span data-i18n="appStatTwo">people close</span></div></div>
+            <button class="add-gift" type="button" aria-label="Add a gift">+</button>
+          </div>
+        </div>
+        <div class="ribbon ribbon-left"></div><div class="ribbon ribbon-right"></div>
+      </div>
+    </section>
+
+    <section class="intro-band"><p data-i18n="intro">A gift is never only an object. It is a date, a face, an occasion — a small proof that someone was on your mind.</p><span aria-hidden="true">✦</span></section>
+
+    <section class="features section" id="features" aria-labelledby="features-title">
+      <div class="section-heading"><p class="kicker" data-i18n="featuresKicker">Made for real life</p><h2 id="features-title" data-i18n="featuresTitle">Everything around the gift<br>has a place.</h2></div>
+      <div class="feature-layout">
+        <article class="feature feature-large"><div class="feature-symbol symbol-coral">◎</div><h3 data-i18n="featureOneTitle">Keep the whole story</h3><p data-i18n="featureOneText">Save who it was for, the occasion, date, price, note and the feeling it left behind.</p><div class="mini-note"><span class="note-heart">♥</span><div><b data-i18n="miniNoteTitle">A thoughtful surprise</b><small data-i18n="miniNoteText">The note makes it unforgettable.</small></div></div></article>
+        <article class="feature"><div class="feature-symbol symbol-yellow">⌕</div><h3 data-i18n="featureTwoTitle">Find it in seconds</h3><p data-i18n="featureTwoText">Filter by people, occasions, dates or a word you remember.</p></article>
+        <article class="feature"><div class="feature-symbol symbol-blue">↗</div><h3 data-i18n="featureThreeTitle">Notice your patterns</h3><p data-i18n="featureThreeText">A simple dashboard turns your gift history into helpful insight.</p></article>
+        <article class="feature feature-export"><div><div class="feature-symbol symbol-ink">⇄</div><h3 data-i18n="featureFourTitle">Yours to keep</h3><p data-i18n="featureFourText">Works offline. Export and import your data as CSV whenever you need.</p></div><span class="csv-badge">.CSV</span></article>
+      </div>
+    </section>
+
+    <section class="how section" id="how-it-works" aria-labelledby="how-title">
+      <div class="how-copy"><p class="kicker" data-i18n="howKicker">A softer system</p><h2 id="how-title" data-i18n="howTitle">Remember the thought,<br>not just the thing.</h2><p data-i18n="howLead">A few intentional details make every future gift easier to choose — and every past one warmer to revisit.</p><a class="text-link" href="#download" data-i18n="howLink">Start your gift story</a></div>
+      <ol class="steps"><li><span>1</span><div><h3 data-i18n="stepOneTitle">Add a gift</h3><p data-i18n="stepOneText">Give it a name, a person and an occasion.</p></div></li><li><span>2</span><div><h3 data-i18n="stepTwoTitle">Add the feeling</h3><p data-i18n="stepTwoText">A note or a rating brings the moment back.</p></div></li><li><span>3</span><div><h3 data-i18n="stepThreeTitle">Come back anytime</h3><p data-i18n="stepThreeText">Search, filter and rediscover what matters.</p></div></li></ol>
+    </section>
+
+    <section class="blog-preview section" aria-labelledby="journal-title"><div class="journal-head"><div><p class="kicker" data-i18n="journalKicker">From the journal</p><h2 id="journal-title" data-i18n="journalTitle">Gifts worth<br>talking about.</h2></div><a class="text-link" href="blog.html" data-i18n="viewBlog">Visit the blog</a></div><div class="article-list"><a href="blog.html#memory" class="article-card article-red"><span class="article-icon">✦</span><p data-i18n="articleOneType">Thoughtful giving</p><h3 data-i18n="articleOneTitle">Why a gift diary makes choosing easier</h3><span class="article-read" data-i18n="readMore">Read story</span></a><a href="blog.html#occasions" class="article-card article-cream"><span class="article-icon">☼</span><p data-i18n="articleTwoType">Gift ideas</p><h3 data-i18n="articleTwoTitle">A better way to remember the little occasions</h3><span class="article-read" data-i18n="readMore">Read story</span></a><a href="blog.html#update" class="article-card article-blue"><span class="article-icon">↗</span><p data-i18n="articleThreeType">App notes</p><h3 data-i18n="articleThreeTitle">New ways to make your list feel like yours</h3><span class="article-read" data-i18n="readMore">Read story</span></a></div></section>
+
+    <section class="download section" id="download"><div><p class="kicker kicker-light" data-i18n="downloadKicker">Your next thoughtful gesture starts here</p><h2 data-i18n="downloadTitle">Keep the good<br>things close.</h2></div><div class="store-links"><a href="https://www.rustore.ru/catalog/app/ru.mdflab.mygiftsmanager" target="_blank" rel="noopener noreferrer"><img src="static/RuStore.png" alt="Download on RuStore"></a><a href="https://appgallery.huawei.com/app/C118863809" target="_blank" rel="noopener noreferrer"><img src="static/AppGallery.png" alt="Download on AppGallery"></a><a href="#" aria-disabled="true"><img src="static/GooglePlay.png" alt="Google Play — coming soon"></a></div></section>
+  </main>
+
+  <footer id="contact"><div class="footer-top"><a class="brand" href="index.html"><img class="brand-mark" src="static/MyGifts.png" alt=""><span>My Gifts</span></a><p data-i18n="footerTagline">A private record of generous moments.</p><a class="footer-email" href="mailto:mygiftsmanager@gmail.com">mygiftsmanager@gmail.com</a></div><div class="footer-bottom"><p>© <span id="year"></span> My Gifts</p><div class="socials"><a href="#" aria-label="X" title="X">𝕏</a><a href="#" aria-label="Telegram" title="Telegram">➤</a><a href="#" aria-label="Weibo" title="Weibo">◉</a></div><div class="legal-links"><a href="privacy.html" data-i18n="privacy">Privacy policy</a><a href="disclaimer.html" data-i18n="disclaimer">Disclaimer</a></div></div></footer>
+  <script src="app.js"></script>
+  <script src="legal.js"></script>
+</body>
+</html>
